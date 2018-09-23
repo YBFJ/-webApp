@@ -2,6 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 // 此为项目的入口文件
 import Vue from 'vue';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+// require swiper styles
+import 'swiper/dist/css/swiper.css';
 import App from './App';
 import router from './router';
 import fastClick from 'fastclick';
@@ -13,6 +16,7 @@ import 'styles/iconfont.css';
 
 Vue.config.productionTip = false;
 fastClick.attach(document.body);
+Vue.use(VueAwesomeSwiper);
 
 /* eslint-disable no-new */
 new Vue({
