@@ -5,10 +5,11 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import fastClick from 'fastclick';
-import './assets/styles/reset.css';
+import 'styles/reset.css';
 // 使得所有设备上显示的是一样的
-import './assets/styles/border.css';
+import 'styles/border.css';
 // 使2k屏幕上正常显示，因为像素和我们定义的像素不一样了
+import 'styles/iconfont.css';
 
 Vue.config.productionTip = false;
 fastClick.attach(document.body);
