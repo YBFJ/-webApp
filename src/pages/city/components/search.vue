@@ -2,9 +2,6 @@
 
   <div class="search">
     <input class="search-input" type="text" placeholder="输入城市名字或者拼音">
-    <router-link to="/">
-      <div class="iconfont header-back">&#xe624;</div>
-    </router-link>
 </div>
 </template>
 
