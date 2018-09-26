@@ -13,11 +13,11 @@ export default new Vuex.Store({
   //     ctx.commit('changeCity', city)
   //   }
   // }
-  mutations: mutations,
-  getters: {
-    // getters类似于组件里的computed作用，起到计算作用，避免数据的冗余
-    doubleCity(state) {
-      return state.city + ' ' + state.city;
-    }
-  }
+  mutations: mutations
+  // getters: {
+  //   // getters类似于组件里的computed作用，起到计算作用，避免数据的冗余
+  //   doubleCity(state) {
+  //     return state.city + ' ' + state.city;
+  //   }
+  // }
 });
