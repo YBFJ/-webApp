@@ -12,6 +12,7 @@
   <ul>
     <li class="search-item border-bottom"
     v-for="item of list" :key="item.id"
+     @click="handleCityClick(item.name)"
     >{{item.name}}</li>
     <li class="search-item border-bottom" v-show="hasNodata">没有找到匹配项目</li>
   </ul>
@@ -32,6 +33,12 @@ export default {
       list: [],
       timer: null
     };
+  },
+  methods: {
+    handleCityClick(city) {
+      this.$store.commit('changeCity', city);
+      this.$router.push('/');
+    }
   },
   computed: {
     hasNodata() {
