@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 // 此为项目的入口文件
 import Vue from 'vue';
+import store from './store/index';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 // require swiper styles
 import 'swiper/dist/css/swiper.css';
@@ -22,6 +23,7 @@ Vue.use(VueAwesomeSwiper);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 });
