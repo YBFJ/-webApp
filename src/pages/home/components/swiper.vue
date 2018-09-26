@@ -5,7 +5,7 @@
     <swiper-slide v-for="item of list" :key="item.id"><img class="swiper-img" :src="item.imgUrl" ></swiper-slide>
     <!-- class="swiper-img"图片尺寸适应 -->
 
-    <!-- Optional controls -->
+    <!-- Optional controls 分页的样式-->
     <div class="swiper-pagination"  slot="pagination"></div>
     <!-- <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div> -->
