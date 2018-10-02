@@ -14,6 +14,7 @@ import 'styles/reset.css';
 import 'styles/border.css';
 // 使2k屏幕上正常显示，因为像素和我们定义的像素不一样了
 import 'styles/iconfont.css';
+import 'babel-polyfill';
 
 Vue.config.productionTip = false;
 fastClick.attach(document.body);

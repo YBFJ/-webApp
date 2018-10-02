@@ -2,9 +2,9 @@
 <div>
   <div class="search">
     <input v-model="keyword" class="search-input" type="text" placeholder="输入城市名字或者拼音">
-    <router-link to="/">
+    <!-- <router-link to="/">
       <div class="iconfont header-back">&#xe624;</div>
-    </router-link>
+    </router-link> -->
   </div>
   <div class="search-content"
   ref="search"
@@ -74,7 +74,7 @@ export default {
     }
   },
   mounted() {
-    this.scroll = new Bscroll(this.$refs.search);
+    this.scroll = new Bscroll(this.$refs.search, { click: true });
   }
 };
 </script>
