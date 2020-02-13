@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-根据慕课网的课程习得的项目，做出和去哪儿网类似的webApp项目。
+根据慕课网的[vue实战课程](https://coding.imooc.com/learn/list/203.html)习得的项目，做出和去哪儿网类似的webApp项目。
 
 ## Build Setup
 
